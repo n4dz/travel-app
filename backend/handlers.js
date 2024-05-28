@@ -36,38 +36,6 @@ const openai = new OpenAIAPi(new Configuration({
 }));
 
 
-
-
-
-
-// // Endpoint to retrieve TikTok social analytics using Ayrshare API
-// const getChatGPT = async (req, res) => {
-//     // Retrieving Ayrshare API key from environment variables
-//     const apiKey = process.env.OPENAPI_KEY;
-
-//     // Checking if Ayrshare API key is missing
-//     if (!apiKey) {
-//         console.error('OPENAPI_KEY not found in .env file');
-//         return res.status(500).send('Internal Server Error');
-//     }
-
-//     // Configuring request options for TikTok analytics
-//     // https://docs.ayrshare.com/rest-api/endpoints/analytics
-//     var options = {
-//         'method': 'GET',
-//         'url': 'https://app.ayrshare.com/api/analytics/social',
-//         'headers': {
-//             'Authorization': 'Bearer ' + apiKey,
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({
-//             "platforms": [
-//                 "tiktok"
-//             ]
-//         })
-//     }
-// };
-
 // module.exports = {
 //     getHealthCheck,
 //     getChatGPT,
